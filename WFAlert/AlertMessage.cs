@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -37,9 +38,9 @@ namespace WFAlert
         public static WFAlert.Themes Theme { get; set; } = WFAlert.Themes.Light;
         public static WFAlert.Styles Style { get; set; } = WFAlert.Styles.Border;
 
-        public static void Show(string message,WFAlert.Actions action)
+        public static void Show(string message,WFAlert.Types type)
         {
-
+            AlertWindow alertfrm = new AlertWindow(message, type, AlertMessage.Theme, AlertMessage.Style); ;
         }
 
 

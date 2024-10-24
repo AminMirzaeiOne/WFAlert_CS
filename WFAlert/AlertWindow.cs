@@ -27,7 +27,7 @@ namespace WFAlert
 
             for (int i = 1; i < 10; i++)
             {
-                fname = "alert" + i.ToString();
+                fname = "alertwindow" + i.ToString();
                 AlertWindow frm = (AlertWindow)Application.OpenForms[fname];
 
                 if (frm == null)
