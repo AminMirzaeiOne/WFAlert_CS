@@ -36,13 +36,13 @@ namespace WFAlert
 
     public enum Sounds
     {
-        ASound, BSound, CSound, DSound, ESound, FSound, GSound
+        None, ASound, BSound, CSound, DSound, ESound, FSound, GSound
     }
 
 
     public static class AlertMessage
     {
-        
+
 
         public static WFAlert.Themes Theme { get; set; } = WFAlert.Themes.Light;
         public static WFAlert.Styles Style { get; set; } = WFAlert.Styles.Border;
@@ -53,15 +53,15 @@ namespace WFAlert
             private static System.IO.Stream soundLocation;
             private static System.Media.SoundPlayer soundPlayer = new System.Media.SoundPlayer();
 
-            public static WFAlert.Sounds Success { get; set; } = Sounds.ASound;
-            public static WFAlert.Sounds Error { get; set; } = Sounds.BSound;
-            public static WFAlert.Sounds Info { get; set; } = Sounds.CSound;
+            public static WFAlert.Sounds Success { get; set; } = Sounds.DSound;
+            public static WFAlert.Sounds Error { get; set; } = Sounds.DSound;
+            public static WFAlert.Sounds Info { get; set; } = Sounds.None;
             public static WFAlert.Sounds Warning { get; set; } = Sounds.DSound;
 
             internal static void StreamSound(WFAlert.Sounds sound)
             {
 
-                switch (sound) 
+                switch (sound)
                 {
                     case Sounds.ASound:
                         soundLocation = Properties.Resources.ASound;
@@ -87,10 +87,35 @@ namespace WFAlert
                 }
             }
 
-            internal static void Play()
+            internal static void Play(WFAlert.Types type)
             {
                 soundPlayer.Stream = soundLocation;
-                soundPlayer.Play();
+                switch (type)
+                {
+                    case Types.Success:
+                        if (Success != Sounds.None)
+                            soundPlayer.Play();
+                        break;
+
+                    case Types.Error:
+                        if (Error != Sounds.None)
+                            soundPlayer.Play();
+                        break;
+
+                    case Types.Info:
+                        if (Info != Sounds.None)
+                            soundPlayer.Play();
+                        break;
+
+                    case Types.Warning:
+                        if (Warning != Sounds.None)
+                            soundPlayer.Play();
+                        break;
+                }
+                
+                
+
+
             }
         }
 
@@ -112,7 +137,7 @@ namespace WFAlert
                     AlertSounds.StreamSound(AlertSounds.Warning);
                     break;
             }
-            AlertSounds.Play();
+            AlertSounds.Play(type);
         }
 
 

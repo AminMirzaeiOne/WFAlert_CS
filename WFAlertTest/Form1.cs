@@ -18,6 +18,7 @@ namespace WFAlertTest
             WFAlert.AlertMessage.Style = WFAlert.Styles.Fill;
             WFAlert.AlertMessage.Theme = WFAlert.Themes.Dark;
             WFAlert.AlertMessage.Font = new Font("Segoe UI", 11, FontStyle.Italic);
+            WFAlert.AlertMessage.AlertSounds.Success = WFAlert.Sounds.DSound;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -27,19 +28,19 @@ namespace WFAlertTest
 
         private void button2_Click(object sender, EventArgs e)
         {
-            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Warning,true);
+            WFAlert.AlertMessage.Show("Warning Message", WFAlert.Types.Warning,true);
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Error,true);
+            WFAlert.AlertMessage.Show("Error Message", WFAlert.Types.Error,true);
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            WFAlert.AlertMessage.Show("Warning Message", WFAlert.Types.Info,true);
+            WFAlert.AlertMessage.Show("Information Message", WFAlert.Types.Info,true);
 
         }
 
