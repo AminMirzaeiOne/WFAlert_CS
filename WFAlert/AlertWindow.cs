@@ -48,7 +48,7 @@ namespace WFAlert
             switch (type)
             {
                 case WFAlert.Types.Success:
-                    this.label1.Text = "";
+                    this.label1.Text = "";
                     break;
                 case WFAlert.Types.Error:
                     this.label1.Text = "";
@@ -131,10 +131,10 @@ namespace WFAlert
                             break;
 
                         case Types.Warning:
-                            this.tableLayoutPanel1.BackColor = Color.Coral;
-                            this.label1.ForeColor = Color.Coral;
-                            this.label2.ForeColor = Color.Coral;
-                            this.button1.ForeColor = Color.Coral;
+                            this.tableLayoutPanel1.BackColor = Color.DarkOrange;
+                            this.label1.ForeColor = Color.DarkOrange;
+                            this.label2.ForeColor = Color.DarkOrange;
+                            this.button1.ForeColor = Color.DarkOrange;
                             break;
                     }
                 }
@@ -152,7 +152,7 @@ namespace WFAlert
                             this.panel1.BackColor = Color.DodgerBlue;
                             break;
                         case Types.Warning:
-                            this.panel1.BackColor = Color.Coral;
+                            this.panel1.BackColor = Color.DarkOrange;
                             break;
                     }
 
@@ -192,7 +192,7 @@ namespace WFAlert
                             this.panel1.BackColor = Color.DodgerBlue;
                             break;
                         case Types.Warning:
-                            this.panel1.BackColor = Color.Coral;
+                            this.panel1.BackColor = Color.DarkOrange;
                             break;
                     }
                     this.tableLayoutPanel1.BackColor = this.panel1.BackColor;
