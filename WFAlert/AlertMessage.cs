@@ -23,5 +23,7 @@ namespace WFAlert
             Info
         }
 
+        private AlertMessage.Actions actions = Actions.Start;
+
     }
 }
