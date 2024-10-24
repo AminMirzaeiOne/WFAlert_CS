@@ -47,7 +47,10 @@ namespace WFAlert
 
         public struct AlertSounds
         {
-
+            public static WFAlert.Sounds Success { get; set; } = Sounds.ASound;
+            public static WFAlert.Sounds Error { get; set; } = Sounds.BSound;
+            public static WFAlert.Sounds Info { get; set; } = Sounds.CSound;
+            public static WFAlert.Sounds Warning { get; set; } = Sounds.DSound;
         }
 
         public static void Show(string message, WFAlert.Types type, bool closebutton = true)
