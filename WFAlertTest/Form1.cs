@@ -19,7 +19,7 @@ namespace WFAlertTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            WFAlert.AlertMessage.Show("Hello World", WFAlert.Types.Success);
         }
     }
 }
