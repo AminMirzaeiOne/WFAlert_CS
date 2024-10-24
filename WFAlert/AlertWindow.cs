@@ -89,11 +89,11 @@ namespace WFAlert
                 {
                     if (value == Themes.Light)
                     {
-                        this.BackColor = Color.White;
+                        this.panel1.BackColor = Color.White;
                     }
                     else
                     {
-                        this.BackColor = Color.FromArgb(20, 20, 20);
+                        this.panel1.BackColor = Color.FromArgb(20, 20, 20);
                     }
 
                     switch (this.type)
@@ -132,16 +132,16 @@ namespace WFAlert
                     switch (this.type)
                     {
                         case Types.Success:
-                            this.BackColor = Color.Green;
+                            this.panel1.BackColor = Color.Green;
                             break;
                         case Types.Error:
-                            this.BackColor = Color.Crimson;
+                            this.panel1.BackColor = Color.Crimson;
                             break;
                         case Types.Info:
-                            this.BackColor = Color.DodgerBlue;
+                            this.panel1.BackColor = Color.DodgerBlue;
                             break;
                         case Types.Warning:
-                            this.BackColor = Color.Coral;
+                            this.panel1.BackColor = Color.Coral;
                             break;
                     }
 
@@ -172,20 +172,19 @@ namespace WFAlert
                     switch (this.type) 
                     {
                         case Types.Success:
-                            this.BackColor = Color.Green;
+                            this.panel1.BackColor = Color.Green;
                             break;
                         case Types.Error:
-                            this.BackColor = Color.Crimson;
+                            this.panel1.BackColor = Color.Crimson;
                             break;
                         case Types.Info:
-                            this.BackColor = Color.DodgerBlue;
+                            this.panel1.BackColor = Color.DodgerBlue;
                             break;
                         case Types.Warning:
-                            this.BackColor = Color.Coral;
+                            this.panel1.BackColor = Color.Coral;
                             break;
                     }
-
-                    this.tableLayoutPanel1.BackColor = this.themeForeColor;
+                    this.tableLayoutPanel1.BackColor = this.panel1.BackColor;
                     this.label1.ForeColor = this.themeForeColor;
                     this.label2.ForeColor = this.themeForeColor;
                     this.button1.ForeColor = this.themeForeColor;
