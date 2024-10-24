@@ -13,10 +13,16 @@ namespace WFAlert
 {
     internal partial class AlertWindow : Form
     {
-        internal AlertWindow()
+        internal AlertWindow(string message,WFAlert.Types type,WFAlert.Themes theme,WFAlert.Styles style)
         {
             InitializeComponent();
+            this.Message = message;
+            this.type = type;
+            this.Theme = theme;
+            this.Style = style;
         }
+
+
         private System.Drawing.Color themeBackColor = Color.Green;
         private readonly System.Drawing.Color themeForeColor = Color.White;
         private WFAlert.Themes theme = Themes.Light;
@@ -137,7 +143,7 @@ namespace WFAlert
             }
         }
 
-        public System.String Message
+        internal System.String Message
         {
             get { return this.label2.Text; }
             set
@@ -146,7 +152,7 @@ namespace WFAlert
             }
         }
 
-        public System.Boolean CloseButton { get { return this.button1.Visible; } set { this.button1.Visible = value; } }
+        internal System.Boolean CloseButton { get { return this.button1.Visible; } set { this.button1.Visible = value; } }
 
        
         
