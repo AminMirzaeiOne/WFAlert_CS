@@ -13,7 +13,7 @@ namespace WFAlert
 {
     internal partial class AlertWindow : Form
     {
-        internal AlertWindow(string message,WFAlert.Types type,WFAlert.Themes theme,WFAlert.Styles style)
+        internal AlertWindow(string message,WFAlert.Types type,bool closebutton = true,WFAlert.Themes theme,WFAlert.Styles style,)
         {
             InitializeComponent();
             this.Message = message;

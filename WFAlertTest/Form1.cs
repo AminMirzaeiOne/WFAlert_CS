@@ -15,7 +15,8 @@ namespace WFAlertTest
         public Form1()
         {
             InitializeComponent();
-            WFAlert.AlertMessage.Style = WFAlert.Styles.Fill;
+            WFAlert.AlertMessage.Style = WFAlert.Styles.Border;
+            WFAlert.AlertMessage.Theme = WFAlert.Themes.Dark;
         }
 
         private void button1_Click(object sender, EventArgs e)
