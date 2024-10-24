@@ -8,5 +8,6 @@ namespace WFAlert
 {
     public class AlertMessage
     {
+
     }
 }
