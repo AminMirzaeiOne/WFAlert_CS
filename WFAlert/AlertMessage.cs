@@ -47,6 +47,7 @@ namespace WFAlert
         public static WFAlert.Themes Theme { get; set; } = WFAlert.Themes.Light;
         public static WFAlert.Styles Style { get; set; } = WFAlert.Styles.Border;
         public static Font Font { get; set; } = new Font("Segoe UI", 10, FontStyle.Regular);
+        public static bool Animation { get; set; } = true;
 
         public struct AlertSounds
         {
@@ -93,6 +94,10 @@ namespace WFAlert
                 public static WFAnimations.AnimationType Error { get; set; } = WFAnimations.AnimationType.Scale;
                 public static WFAnimations.AnimationType Info { get; set; } = WFAnimations.AnimationType.Scale;
                 public static WFAnimations.AnimationType Warning { get; set; } = WFAnimations.AnimationType.Scale;
+
+
+
+
             }
 
             internal static void Play(WFAlert.Types type)
@@ -120,8 +125,8 @@ namespace WFAlert
                             soundPlayer.Play();
                         break;
                 }
-                
-                
+
+
 
 
             }
