@@ -6,24 +6,45 @@ using System.Threading.Tasks;
 
 namespace WFAlert
 {
+    public enum Actions
+    {
+        Wait,
+        Start,
+        Close
+    }
+
+    public enum Types
+    {
+        Success,
+        Warning,
+        Error,
+        Info
+    }
+
+    public enum Themes
+    {
+        Light, Dark
+    }
+
+    public enum Styles
+    {
+        Fill, Border
+    }
+
+
     public class AlertMessage
     {
-        public enum Actions
+        private WFAlert.Themes theme = Themes.Light;
+        
+        public WFAlert.Themes Theme
         {
-            Wait,
-            Start,
-            Close
+            get { return this.theme; }
+            set
+            {
+                this.theme = value;
+            }
         }
 
-        public enum Types
-        {
-            Success,
-            Warning,
-            Error,
-            Info
-        }
-
-        private AlertMessage.Actions actions = Actions.Start;
 
 
     }
