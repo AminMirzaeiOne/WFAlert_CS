@@ -87,6 +87,14 @@ namespace WFAlert
                 }
             }
 
+            public struct AlertAnimation
+            {
+                public static WFAnimations.AnimationType Success { get; set; } = WFAnimations.AnimationType.Scale;
+                public static WFAnimations.AnimationType Error { get; set; } = WFAnimations.AnimationType.Scale;
+                public static WFAnimations.AnimationType Info { get; set; } = WFAnimations.AnimationType.Scale;
+                public static WFAnimations.AnimationType Warning { get; set; } = WFAnimations.AnimationType.Scale;
+            }
+
             internal static void Play(WFAlert.Types type)
             {
                 soundPlayer.Stream = soundLocation;
