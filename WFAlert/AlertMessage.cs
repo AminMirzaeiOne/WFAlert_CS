@@ -32,18 +32,11 @@ namespace WFAlert
     }
 
 
-    public class AlertMessage
+    public static class AlertMessage
     {
-        private WFAlert.Themes theme = Themes.Light;
-        
-        public WFAlert.Themes Theme
-        {
-            get { return this.theme; }
-            set
-            {
-                this.theme = value;
-            }
-        }
+        public static WFAlert.Themes Theme { get; set; } = WFAlert.Themes.Light;
+        public static WFAlert.Styles Style { get; set; } = WFAlert.Styles.Border;
+
 
 
 
