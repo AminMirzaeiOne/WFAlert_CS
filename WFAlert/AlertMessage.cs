@@ -33,12 +33,22 @@ namespace WFAlert
         Fill, Border
     }
 
+    public enum Sounds
+    {
+        ASound, BSound, CSound, DSound, ESound, FSound, GSound
+    }
+
 
     public static class AlertMessage
     {
         public static WFAlert.Themes Theme { get; set; } = WFAlert.Themes.Light;
         public static WFAlert.Styles Style { get; set; } = WFAlert.Styles.Border;
         public static Font Font { get; set; } = new Font("Segoe UI", 10, FontStyle.Regular);
+
+        public struct Sounds
+        {
+
+        }
 
         public static void Show(string message, WFAlert.Types type, bool closebutton = true)
         {
