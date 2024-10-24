@@ -19,6 +19,12 @@ namespace WFAlert
         private AlertMessage.Actions actions;
         private int x, y;
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.timer1.Interval = 1;
+            this.actions = AlertMessage.Actions.Close;
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             switch (this.actions)
