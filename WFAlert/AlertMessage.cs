@@ -8,6 +8,11 @@ namespace WFAlert
 {
     public class AlertMessage
     {
-
+        public enum Action
+        {
+            Wait,
+            Start,
+            Close
+        }
     }
 }

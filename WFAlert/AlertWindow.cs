@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace WFAlert
 {
-    public partial class AlertWindow : Form
+    internal partial class AlertWindow : Form
     {
-        public AlertWindow()
+        internal AlertWindow()
         {
             InitializeComponent();
         }
+
+
     }
 }
