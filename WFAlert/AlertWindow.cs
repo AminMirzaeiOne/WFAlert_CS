@@ -155,7 +155,10 @@ namespace WFAlert
 
         internal System.Boolean CloseButton { get { return this.button1.Visible; } set { this.button1.Visible = value; } }
 
-       
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.timer1.Interval = 1;
+            this.action = WFAlert.Actions.Close;
+        }
     }
 }
