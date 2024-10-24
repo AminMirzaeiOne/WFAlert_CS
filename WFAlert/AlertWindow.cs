@@ -13,13 +13,14 @@ namespace WFAlert
 {
     internal partial class AlertWindow : Form
     {
-        internal AlertWindow(string message,WFAlert.Types type,bool closebutton = true,WFAlert.Themes theme,WFAlert.Styles style,)
+        internal AlertWindow(string message,WFAlert.Types type,bool closebutton,WFAlert.Themes theme,WFAlert.Styles style,Font font)
         {
             InitializeComponent();
             this.Message = message;
             this.type = type;
             this.Theme = theme;
             this.Style = style;
+            this.MessageFont = font;
 
             this.Opacity = 0.0;
             this.StartPosition = FormStartPosition.Manual;
@@ -78,6 +79,15 @@ namespace WFAlert
         private WFAlert.Actions action = Actions.Start;
         private int x, y;
 
+
+        internal Font MessageFont
+        {
+            get { return this.label2.Font; }
+            set
+            {
+                this.label2.Font = value;
+            }
+        }
 
         internal WFAlert.Themes Theme
         {

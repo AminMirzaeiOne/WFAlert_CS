@@ -21,24 +21,24 @@ namespace WFAlertTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Success);
+            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Success,true);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Warning);
+            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Warning,true);
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Error);
+            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Error,false);
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Info);
+            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Info,false);
 
         }
     }
