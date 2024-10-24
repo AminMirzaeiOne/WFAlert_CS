@@ -17,6 +17,7 @@ namespace WFAlert
             InitializeComponent();
         }
 
+        private int x, y;
 
     }
 }
