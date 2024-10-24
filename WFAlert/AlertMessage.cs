@@ -37,7 +37,10 @@ namespace WFAlert
         public static WFAlert.Themes Theme { get; set; } = WFAlert.Themes.Light;
         public static WFAlert.Styles Style { get; set; } = WFAlert.Styles.Border;
 
+        public static void Show(string message,WFAlert.Actions action)
+        {
 
+        }
 
 
     }
