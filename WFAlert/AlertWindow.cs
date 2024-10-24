@@ -28,6 +28,7 @@ namespace WFAlert
         private WFAlert.Themes theme = Themes.Light;
         private WFAlert.Styles style = Styles.Border;
         private WFAlert.Types type = Types.Success;
+        private WFAlert.Actions action = Actions.Start;
 
         internal WFAlert.Themes Theme
         {
