@@ -24,6 +24,8 @@ namespace WFAlert
         }
 
         private AlertMessage.Actions actions = Actions.Start;
+        private int x, y;
+
 
     }
 }
