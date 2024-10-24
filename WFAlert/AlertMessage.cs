@@ -45,7 +45,7 @@ namespace WFAlert
         public static WFAlert.Styles Style { get; set; } = WFAlert.Styles.Border;
         public static Font Font { get; set; } = new Font("Segoe UI", 10, FontStyle.Regular);
 
-        public struct Sounds
+        public struct AlertSounds
         {
 
         }
