@@ -20,6 +20,53 @@ namespace WFAlert
             this.type = type;
             this.Theme = theme;
             this.Style = style;
+
+            this.Opacity = 0.0;
+            this.StartPosition = FormStartPosition.Manual;
+            string fname;
+
+            for (int i = 1; i < 10; i++)
+            {
+                fname = "alert" + i.ToString();
+                AlertWindow frm = (AlertWindow)Application.OpenForms[fname];
+
+                if (frm == null)
+                {
+                    this.Name = fname;
+                    this.x = Screen.PrimaryScreen.WorkingArea.Width - this.Width + 15;
+                    this.y = Screen.PrimaryScreen.WorkingArea.Height - this.Height * i - 5 * i;
+                    this.Location = new Point(this.x, this.y);
+                    break;
+
+                }
+
+            }
+            this.x = Screen.PrimaryScreen.WorkingArea.Width - base.Width - 5;
+
+            switch (type)
+            {
+                case WFAlert.Types.Success:
+                    this.label1.Text = "";
+                    break;
+                case WFAlert.Types.Error:
+                    this.label1.Text = "";
+                    break;
+                case WFAlert.Types.Info:
+                    this.label1.Text = "";
+                    break;
+                case WFAlert.Types.Warning:
+                    this.label1.Text = "";
+                    break;
+            }
+
+
+            this.label2.Text = message;
+
+            this.Show();
+            this.action = WFAlert.Actions.Start;
+            this.timer1.Interval = 1;
+            this.timer1.Start();
+
         }
 
 
@@ -29,6 +76,8 @@ namespace WFAlert
         private WFAlert.Styles style = Styles.Border;
         private WFAlert.Types type = Types.Success;
         private WFAlert.Actions action = Actions.Start;
+        private int x, y;
+
 
         internal WFAlert.Themes Theme
         {
