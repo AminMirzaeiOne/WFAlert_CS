@@ -58,8 +58,9 @@ namespace WFAlert
             public static WFAlert.Sounds Info { get; set; } = Sounds.CSound;
             public static WFAlert.Sounds Warning { get; set; } = Sounds.DSound;
 
-            private void StreamSound(WFAlert.Sounds sound)
+            internal static void StreamSound(WFAlert.Sounds sound)
             {
+
                 switch (sound) 
                 {
                     case Sounds.ASound:
@@ -85,11 +86,33 @@ namespace WFAlert
                         break;
                 }
             }
+
+            internal static void Play()
+            {
+                soundPlayer.Stream = soundLocation;
+                soundPlayer.Play();
+            }
         }
 
         public static void Show(string message, WFAlert.Types type, bool closebutton = true)
         {
             AlertWindow alertfrm = new AlertWindow(message, type, closebutton, AlertMessage.Theme, AlertMessage.Style, AlertMessage.Font);
+            switch (type)
+            {
+                case Types.Success:
+                    AlertSounds.StreamSound(AlertSounds.Success);
+                    break;
+                case Types.Error:
+                    AlertSounds.StreamSound(AlertSounds.Error);
+                    break;
+                case Types.Info:
+                    AlertSounds.StreamSound(AlertSounds.Info);
+                    break;
+                case Types.Warning:
+                    AlertSounds.StreamSound(AlertSounds.Warning);
+                    break;
+            }
+            AlertSounds.Play();
         }
 
 
