@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WFAlert\WFAlert.csproj">
+      <Project>{045b148f-4c8b-49ab-9f5c-6764453eaac1}</Project>
+      <Name>WFAlert</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
