@@ -204,6 +204,42 @@ namespace WFAlert
 
         internal System.Boolean CloseButton { get { return this.button1.Visible; } set { this.button1.Visible = value; } }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            switch (this.action)
+            {
+                case WFAlert.Actions.Wait:
+                    timer1.Interval = 5000;
+                    action = WFAlert.Actions.Close;
+                    break;
+                case WFAlert.Actions.Start:
+                    this.timer1.Interval = 1;
+                    this.Opacity += 0.1;
+                    if (this.x < this.Location.X)
+                    {
+                        this.Left--;
+                    }
+                    else
+                    {
+                        if (this.Opacity == 1.0)
+                        {
+                            action = WFAlert.Actions.Wait;
+                        }
+                    }
+                    break;
+                case WFAlert.Actions.Close:
+                    timer1.Interval = 1;
+                    this.Opacity -= 0.1;
+
+                    this.Left -= 3;
+                    if (base.Opacity == 0.0)
+                    {
+                        base.Close();
+                    }
+                    break;
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.timer1.Interval = 1;
