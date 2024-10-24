@@ -21,6 +21,7 @@ namespace WFAlert
             this.Theme = theme;
             this.Style = style;
             this.MessageFont = font;
+            this.CloseButton = closebutton;
 
             this.Opacity = 0.0;
             this.StartPosition = FormStartPosition.Manual;

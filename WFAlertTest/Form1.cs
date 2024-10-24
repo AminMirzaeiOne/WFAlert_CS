@@ -15,8 +15,9 @@ namespace WFAlertTest
         public Form1()
         {
             InitializeComponent();
-            WFAlert.AlertMessage.Style = WFAlert.Styles.Border;
+            WFAlert.AlertMessage.Style = WFAlert.Styles.Fill;
             WFAlert.AlertMessage.Theme = WFAlert.Themes.Dark;
+            WFAlert.AlertMessage.Font = new Font("Segoe UI", 11, FontStyle.Italic);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,7 +39,7 @@ namespace WFAlertTest
 
         private void button4_Click(object sender, EventArgs e)
         {
-            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Info,false);
+            WFAlert.AlertMessage.Show("Warning Message", WFAlert.Types.Info,false);
 
         }
     }
