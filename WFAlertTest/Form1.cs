@@ -15,11 +15,30 @@ namespace WFAlertTest
         public Form1()
         {
             InitializeComponent();
+            WFAlert.AlertMessage.Style = WFAlert.Styles.Fill;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WFAlert.AlertMessage.Show("Hello World", WFAlert.Types.Success);
+            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Success);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Warning);
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Error);
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Info);
+
         }
     }
 }
