@@ -15,6 +15,7 @@ namespace WFAlertTest
         public Form1()
         {
             InitializeComponent();
+            WFAlert.AlertMessage.Animation = true;
             WFAlert.AlertMessage.Style = WFAlert.Styles.Fill;
             WFAlert.AlertMessage.Theme = WFAlert.Themes.Dark;
             WFAlert.AlertMessage.Font = new Font("Segoe UI", 11, FontStyle.Italic);
