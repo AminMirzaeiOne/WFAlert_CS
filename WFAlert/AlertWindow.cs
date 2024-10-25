@@ -13,7 +13,7 @@ namespace WFAlert
 {
     internal partial class AlertWindow : Form
     {
-        internal AlertWindow(string message,WFAlert.Types type,bool closebutton,WFAlert.Themes theme,WFAlert.Styles style,Font font,WFAnimations.AnimationType animationtype)
+        internal AlertWindow(string message,WFAlert.Types type,bool closebutton,WFAlert.Themes theme,WFAlert.Styles style,Font font)
         {
             InitializeComponent();
             this.Message = message;
@@ -70,6 +70,21 @@ namespace WFAlert
             this.animator1.Show(this.tableLayoutPanel1);
             this.timer1.Interval = 5000;
             this.timer1.Start();
+            switch (type) 
+            {
+                case WFAlert.Types.Success:
+                    this.animator1.AnimationType = WFAlert.AlertMessage.AlertAnimation.Success;
+                    break;
+                case WFAlert.Types.Error:
+                    this.animator1.AnimationType = WFAlert.AlertMessage.AlertAnimation.Error;
+                    break;
+                case WFAlert.Types.Info:
+                    this.animator1.AnimationType = WFAlert.AlertMessage.AlertAnimation.Info;
+                    break;
+                case WFAlert.Types.Warning:
+                    this.animator1.AnimationType = WFAlert.AlertMessage.AlertAnimation.Warning;
+                    break;
+            }
 
         }
 
