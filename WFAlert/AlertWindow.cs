@@ -79,6 +79,7 @@ namespace WFAlert
         private WFAlert.Types type = Types.Success;
         private WFAlert.Actions action = Actions.Start;
         private int x, y;
+        private WFAnimations.Animator animator = new WFAnimations.Animator();
 
 
         internal Font MessageFont
