@@ -25,7 +25,6 @@ namespace WFAlert
             this.BackColor = Color.Black;
             this.TransparencyKey = Color.Black;
 
-            //this.Opacity = 0.0;
             this.StartPosition = FormStartPosition.Manual;
             string fname;
 
@@ -37,7 +36,7 @@ namespace WFAlert
                 if (frm == null)
                 {
                     this.Name = fname;
-                    this.x = Screen.PrimaryScreen.WorkingArea.Width - this.Width + 15;
+                    this.x = Screen.PrimaryScreen.WorkingArea.Width - this.Width - 10;
                     this.y = Screen.PrimaryScreen.WorkingArea.Height - this.Height * i - 5 * i;
                     this.Location = new Point(this.x, this.y);
                     break;
@@ -69,7 +68,6 @@ namespace WFAlert
             this.Show();
             this.tableLayoutPanel1.Visible = false;
             this.animator1.Show(this.tableLayoutPanel1);
-            this.action = WFAlert.Actions.Start;
             this.timer1.Interval = 5000;
             this.timer1.Start();
 
@@ -222,6 +220,7 @@ namespace WFAlert
         {
             this.animator1.Hide(this.tableLayoutPanel1);
             this.timer2.Start();
+            this.timer1.Stop();
         }
 
         private void timer2_Tick(object sender, EventArgs e)
