@@ -40,6 +40,13 @@ WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Success,true);
 ```
 5 - The Show method in the AlertMessage class receives three parameters (text message , Alert Type , Close Button Visable)
 
+6 - Enable and disable animation <br />
+
+```
+WFAlert.AlertMessage.Animation = true;
+```
+
+
 <h2>🎨Styles and Themes</h2>
 <h3>✅Success Alert</h3>
 <img width="250" alt="Capture28" src="https://github.com/user-attachments/assets/6b7e8537-9e0b-4778-8ff9-c3610363ab0b">
