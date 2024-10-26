@@ -141,10 +141,10 @@ namespace WFAlert
 
         public struct AlertAnimation
         {
-            public static WFAlert.Animations Success { get; set; } = WFAnimations.AnimationType.Scale;
-            public static WFAlert.Animations Error { get; set; } = WFAnimations.AnimationType.Scale;
-            public static WFAlert.Animations Info { get; set; } = WFAnimations.AnimationType.Scale;
-            public static WFAlert.Animations Warning { get; set; } = WFAnimations.AnimationType.Scale;
+            public static WFAlert.Animations Success { get; set; } = WFAlert.Animations.Scale;
+            public static WFAlert.Animations Error { get; set; } = WFAlert.Animations.Scale;
+            public static WFAlert.Animations Info { get; set; } = WFAlert.Animations.Scale;
+            public static WFAlert.Animations Warning { get; set; } = WFAlert.Animations.Scale;
         }
 
         public static void Show(string message, WFAlert.Types type, bool closebutton = true)
