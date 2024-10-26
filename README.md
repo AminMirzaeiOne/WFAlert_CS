@@ -56,6 +56,12 @@ WFAlert.AlertMessage.AlertAnimation.TimeStep = 0.02f;
 WFAlert.AlertMessage.AlertAnimation.Success = WFAlert.Animations.Mosaic;
 ```
 
+9 - Changing the style of Alerts (Fill and Border Styles) <br />
+
+```
+WFAlert.AlertMessage.Style = WFAlert.Styles.Fill;
+```
+
 
 <h2>🎨Styles and Themes</h2>
 <h3>✅Success Alert</h3>
