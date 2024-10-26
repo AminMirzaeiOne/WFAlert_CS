@@ -11,7 +11,7 @@ Alert message display library in Windows form (light and simple version)<br />
 - It has Fill and Border styles <br />
 - Four different types of Alert (Success - Error - Warning - Info) <br />
 - Ability to support 7 Alert sounds <br />
-- <b>The ability to support 13 animations with the help of the WFAnimation library ([a link](https://github.com/AminMirzaeiOne/WFAnimations_CS) </b> <br/>
+- <b>The ability to support 13 animations with the help of the WFAnimation library (https://github.com/AminMirzaeiOne/WFAnimations_CS) </b> <br/>
 
 <h2> 🏗 Build Information</h2>
 - Made in year = February 2018 <br />
