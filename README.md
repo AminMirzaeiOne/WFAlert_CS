@@ -12,13 +12,13 @@ Alert message display library in Windows form (light and simple version)<br />
 <h2> 🏗 Build Information</h2>
 - Made in year = February 2018 <br />
 ----------------------------------------------- <br />
-- .NET Framework =  4.7.1 <br />
+- .NET Framework =  4.6.2 <br />
 - Csharp = Csharp 7.0.0 <br />
-- Micrsoft Visual Studio = VS 2019 <br />
+- Micrsoft Visual Studio = VS 2015 <br />
 
 
 <h2> 📜 Program Rules</h2>
-1 - All GPL license rules must be followed <br />
+1 - All MIT license rules must be followed <br />
 2 - The name of the GitHub founder and main developer (aminmirzaeione) should be mentioned <br />
 
 <h2> 💡 How to use</h2>
