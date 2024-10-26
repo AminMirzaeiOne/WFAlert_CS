@@ -38,6 +38,6 @@ this.animator1.Hide(this.button1);
 
 <h2>📷 Screenshots</h2>
 
-https://github.com/user-attachments/assets/e1b50fea-4b77-490a-a507-6f112e886b14 <br />
+<h1>Styles and Themes</h1>
+<img width="674" alt="Capture28" src="https://github.com/user-attachments/assets/6b7e8537-9e0b-4778-8ff9-c3610363ab0b">
 
-https://github.com/user-attachments/assets/3a74d414-f2a9-4506-950e-57ac469a3400
