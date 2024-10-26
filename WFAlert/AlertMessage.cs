@@ -39,6 +39,23 @@ namespace WFAlert
         None, ASound, BSound, CSound, DSound, ESound, FSound, GSound
     }
 
+    public enum Animations
+    {
+        Rotate,
+        HorizSlide,
+        VertSlide,
+        Scale,
+        ScaleAndRotate,
+        HorizSlideAndRotate,
+        ScaleAndHorizSlide,
+        Transparent,
+        Leaf,
+        Mosaic,
+        Particles,
+        VertBlind,
+        HorizBlind
+    }
+
 
     public static class AlertMessage
     {
