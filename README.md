@@ -74,6 +74,12 @@ WFAlert.AlertMessage.Theme = WFAlert.Themes.Dark;
 WFAlert.AlertMessage.Font = new Font("Segoe UI", 11, FontStyle.Italic);
 ```
 
+12 - Changing the sound of Alerts <br />
+
+```
+WFAlert.AlertMessage.AlertSounds.Success = WFAlert.Sounds.ASound;
+```
+
 
 <h2>🎨Styles and Themes</h2>
 <h3>✅Success Alert</h3>
