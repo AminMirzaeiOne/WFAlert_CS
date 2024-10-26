@@ -47,6 +47,6 @@ this.animator1.Hide(this.button1);
 <img width="300" alt="Capture28" src="https://github.com/user-attachments/assets/adda7949-f97c-41a5-873f-47a18dea8794">
 <h3>Error Alert</h3>
 <img width="300" alt="Capture28" src="https://github.com/user-attachments/assets/d16fef3c-2994-465c-9a34-50d5bf16b680">
-<img width="300" alt="Capture28" src="https://github.com/user-attachments/assets/c60d1d6d-8c31-49ba-864c-a2e739389717">
 <img width="300" alt="Capture28" src="https://github.com/user-attachments/assets/bf18fee5-c362-4b9f-afdb-a653f413922c">
+<img width="300" alt="Capture28" src="https://github.com/user-attachments/assets/c60d1d6d-8c31-49ba-864c-a2e739389717">
 
