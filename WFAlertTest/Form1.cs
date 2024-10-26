@@ -16,6 +16,7 @@ namespace WFAlertTest
         {
             InitializeComponent();
             WFAlert.AlertMessage.Animation = true;
+            WFAlert.AlertMessage.AlertAnimation.TimeStep = 0.01f;
             WFAlert.AlertMessage.AlertAnimation.Success = WFAlert.Animations.Mosaic;
             WFAlert.AlertMessage.AlertAnimation.Warning = WFAlert.Animations.ScaleAndRotate;
             WFAlert.AlertMessage.AlertAnimation.Info = WFAlert.Animations.Leaf;
