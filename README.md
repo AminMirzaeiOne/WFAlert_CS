@@ -99,3 +99,6 @@ WFAlert.AlertMessage.AlertSounds.Success = WFAlert.Sounds.ASound;
 <img width="250" alt="Capture28" src="https://github.com/user-attachments/assets/9bdae835-d280-49c4-9daa-3e300b0b8f7c">
 <img width="250" alt="Capture28" src="https://github.com/user-attachments/assets/87f1abae-c203-4d72-bf91-9a77feaa2448">
 
+<h2>🧠How it works</h2>
+<video width="400" alt="Capture28" src="https://github.com/user-attachments/assets/58761642-232e-4343-bc4d-e0f929ce4ecc">
+
