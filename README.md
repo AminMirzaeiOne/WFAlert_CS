@@ -23,12 +23,10 @@ Alert message display library in Windows form (light and simple version)<br />
 
 <h2> 💡 How to use</h2>
 1 - Add the library (DLL) file to your Windows Forms application via Add Reference <br />
-2 - Drag the Animator component inside the Visual Studio ToolBox into the form designer <br />
-3 - Specify the type of animation from the properties box <br />
-4 - Then, use the Show() method in the coding to display a control in an animated form <br />
+2 - Write the WFAlert namespace in your C# code <br />
 
 ```
-this.animator1.Show(this.button1);
+using WFAlert;
 ```
 5 - Then, in coding, use the Hide() method to hide a control in an animated way <br />
 
