@@ -68,6 +68,12 @@ WFAlert.AlertMessage.Style = WFAlert.Styles.Fill;
 WFAlert.AlertMessage.Theme = WFAlert.Themes.Dark;
 ```
 
+11 - Changing and personalizing the text font of Alerts <br />
+
+```
+WFAlert.AlertMessage.Font = new Font("Segoe UI", 11, FontStyle.Italic);
+```
+
 
 <h2>🎨Styles and Themes</h2>
 <h3>✅Success Alert</h3>
