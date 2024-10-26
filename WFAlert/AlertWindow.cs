@@ -79,6 +79,9 @@ namespace WFAlert
                     this.animator1.AnimationType = WFAlert.AlertMessage.AlertAnimation.warningType;
                     break;
             }
+            this.animator1.Upside = WFAlert.AlertMessage.AlertAnimation.Upside;
+            this.animator1.MaxAnimationTime = WFAlert.AlertMessage.AlertAnimation.AnimationTime;
+            this.animator1.TimeStep = WFAlert.AlertMessage.AlertAnimation.TimeStep;
 
             this.Show();
             this.tableLayoutPanel1.Visible = false;

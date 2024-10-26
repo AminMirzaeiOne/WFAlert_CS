@@ -356,9 +356,9 @@ namespace WFAlert
 
             public static System.Boolean Upside { get; set; } = true;
 
-            public static System.Int32 AnimationTime = 1500;
+            public static System.Int32 AnimationTime { get; set; } = 1500;
 
-            public static System.Single TimeStep = 0.02f;
+            public static System.Single TimeStep { get; set; } = 0.02f;
         }
 
         public static void Show(string message, WFAlert.Types type, bool closebutton = true)
