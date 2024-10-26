@@ -353,6 +353,8 @@ namespace WFAlert
                     }
                 }
             }
+
+            public static System.Boolean Upside { get; set; } = true;
         }
 
         public static void Show(string message, WFAlert.Types type, bool closebutton = true)
