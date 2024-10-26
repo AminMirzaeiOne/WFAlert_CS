@@ -44,6 +44,12 @@ WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Success,true);
 WFAlert.AlertMessage.Animation = true;
 ```
 
+7 - Changing the Time Step of animations <br />
+
+```
+WFAlert.AlertMessage.AlertAnimation.TimeStep = 0.02f;
+```
+
 
 <h2>🎨Styles and Themes</h2>
 <h3>✅Success Alert</h3>
