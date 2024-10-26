@@ -144,6 +144,7 @@ namespace WFAlert
             internal static WFAnimations.AnimationType success = WFAnimations.AnimationType.Scale;
             internal static WFAnimations.AnimationType error = WFAnimations.AnimationType.Scale;
             internal static WFAnimations.AnimationType info = WFAnimations.AnimationType.Scale;
+            internal static WFAnimations.AnimationType warning = WFAnimations.AnimationType.Scale;
 
 
 
