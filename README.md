@@ -28,11 +28,13 @@ Alert message display library in Windows form (light and simple version)<br />
 ```
 using WFAlert;
 ```
-5 - Then, in coding, use the Hide() method to hide a control in an animated way <br />
+3 - Put a button on your form and call its click event <br />
+4 - Enter the following code to display an Alert <br />
 
 ```
-this.animator1.Hide(this.button1);
+WFAlert.AlertMessage.Show("Success Message", WFAlert.Types.Success,true);
 ```
+5 - The Show method in the AlertMessage class receives three parameters (text message , Alert Type , Close Button Visable)
 
 <h2>🎨Styles and Themes</h2>
 <h3>Success Alert</h3>
