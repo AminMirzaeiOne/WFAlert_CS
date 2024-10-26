@@ -64,27 +64,28 @@ namespace WFAlert
 
 
             this.label2.Text = message;
+            switch (type)
+            {
+                case WFAlert.Types.Success:
+                    this.animator1.AnimationType = WFAlert.AlertMessage.AlertAnimation.successType;
+                    break;
+                case WFAlert.Types.Error:
+                    this.animator1.AnimationType = WFAlert.AlertMessage.AlertAnimation.errorType;
+                    break;
+                case WFAlert.Types.Info:
+                    this.animator1.AnimationType = WFAlert.AlertMessage.AlertAnimation.infoType;
+                    break;
+                case WFAlert.Types.Warning:
+                    this.animator1.AnimationType = WFAlert.AlertMessage.AlertAnimation.warningType;
+                    break;
+            }
 
             this.Show();
             this.tableLayoutPanel1.Visible = false;
             this.animator1.Show(this.tableLayoutPanel1);
             this.timer1.Interval = 5000;
             this.timer1.Start();
-            switch (type) 
-            {
-                case WFAlert.Types.Success:
-                    this.animator1.AnimationType = WFAlert.AlertMessage.AlertAnimation.Success;
-                    break;
-                case WFAlert.Types.Error:
-                    this.animator1.AnimationType = WFAlert.AlertMessage.AlertAnimation.Error;
-                    break;
-                case WFAlert.Types.Info:
-                    this.animator1.AnimationType = WFAlert.AlertMessage.AlertAnimation.Info;
-                    break;
-                case WFAlert.Types.Warning:
-                    this.animator1.AnimationType = WFAlert.AlertMessage.AlertAnimation.Warning;
-                    break;
-            }
+           
 
         }
 

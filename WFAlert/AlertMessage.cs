@@ -141,22 +141,218 @@ namespace WFAlert
 
         public struct AlertAnimation
         {
-            private static WFAnimations.AnimationType successType = WFAnimations.AnimationType.Scale;
-            private static WFAnimations.AnimationType errorType = WFAnimations.AnimationType.Scale;
-            private static WFAnimations.AnimationType infoType = WFAnimations.AnimationType.Scale;
-            private static WFAnimations.AnimationType warningType = WFAnimations.AnimationType.Scale;
+            internal static WFAnimations.AnimationType successType = WFAnimations.AnimationType.Scale;
+            internal static WFAnimations.AnimationType errorType = WFAnimations.AnimationType.Scale;
+            internal static WFAnimations.AnimationType infoType = WFAnimations.AnimationType.Scale;
+            internal static WFAnimations.AnimationType warningType = WFAnimations.AnimationType.Scale;
 
-            internal static WFAlert.Animations success = WFAlert.Animations.Scale;
-            internal static WFAlert.Animations error = WFAlert.Animations.Scale;
-            internal static WFAlert.Animations info = WFAlert.Animations.Scale;
-            internal static WFAlert.Animations warning = WFAlert.Animations.Scale;
+            private static WFAlert.Animations success = WFAlert.Animations.Scale;
+            private static WFAlert.Animations error = WFAlert.Animations.Scale;
+            private static WFAlert.Animations info = WFAlert.Animations.Scale;
+            private static WFAlert.Animations warning = WFAlert.Animations.Scale;
 
 
 
-            public static WFAlert.Animations Success { get; set; } = WFAlert.Animations.Scale;
-            public static WFAlert.Animations Error { get; set; } = WFAlert.Animations.Scale;
-            public static WFAlert.Animations Info { get; set; } = WFAlert.Animations.Scale;
-            public static WFAlert.Animations Warning { get; set; } = WFAlert.Animations.Scale;
+            public static WFAlert.Animations Success
+            {
+                get { return AlertMessage.AlertAnimation.success; }
+                set
+                {
+                    AlertMessage.AlertAnimation.success = value;
+                    switch (value)
+                    {
+                        case Animations.Scale:
+                            AlertMessage.AlertAnimation.successType = WFAnimations.AnimationType.Scale;
+                            break;
+                        case Animations.Rotate:
+                            AlertMessage.AlertAnimation.successType = WFAnimations.AnimationType.Rotate;
+                            break;
+                        case Animations.Transparent:
+                            AlertMessage.AlertAnimation.successType = WFAnimations.AnimationType.Transparent;
+                            break;
+                        case Animations.Particles:
+                            AlertMessage.AlertAnimation.successType = WFAnimations.AnimationType.Particles;
+                            break;
+                        case Animations.Mosaic:
+                            AlertMessage.AlertAnimation.successType = WFAnimations.AnimationType.Mosaic;
+                            break;
+                        case Animations.Leaf:
+                            AlertMessage.AlertAnimation.successType = WFAnimations.AnimationType.Leaf;
+                            break;
+                        case Animations.HorizSlideAndRotate:
+                            AlertMessage.AlertAnimation.successType = WFAnimations.AnimationType.HorizSlideAndRotate;
+                            break;
+                        case Animations.HorizBlind:
+                            AlertMessage.AlertAnimation.successType = WFAnimations.AnimationType.HorizBlind;
+                            break;
+                        case Animations.VertBlind:
+                            AlertMessage.AlertAnimation.successType = WFAnimations.AnimationType.VertBlind;
+                            break;
+                        case Animations.VertSlide:
+                            AlertMessage.AlertAnimation.successType = WFAnimations.AnimationType.VertSlide;
+                            break;
+                        case Animations.HorizSlide:
+                            AlertMessage.AlertAnimation.successType = WFAnimations.AnimationType.HorizSlide;
+                            break;
+                        case Animations.ScaleAndRotate:
+                            AlertMessage.AlertAnimation.successType = WFAnimations.AnimationType.ScaleAndRotate;
+                            break;
+                        case Animations.ScaleAndHorizSlide:
+                            AlertMessage.AlertAnimation.successType = WFAnimations.AnimationType.ScaleAndHorizSlide;
+                            break;
+                    }
+                }
+            }
+            public static WFAlert.Animations Error
+            {
+                get { return AlertMessage.AlertAnimation.error; }
+                set
+                {
+                    AlertMessage.AlertAnimation.error = value;
+                    switch (value)
+                    {
+                        case Animations.Scale:
+                            AlertMessage.AlertAnimation.errorType = WFAnimations.AnimationType.Scale;
+                            break;
+                        case Animations.Rotate:
+                            AlertMessage.AlertAnimation.errorType = WFAnimations.AnimationType.Rotate;
+                            break;
+                        case Animations.Transparent:
+                            AlertMessage.AlertAnimation.errorType = WFAnimations.AnimationType.Transparent;
+                            break;
+                        case Animations.Particles:
+                            AlertMessage.AlertAnimation.errorType = WFAnimations.AnimationType.Particles;
+                            break;
+                        case Animations.Mosaic:
+                            AlertMessage.AlertAnimation.errorType = WFAnimations.AnimationType.Mosaic;
+                            break;
+                        case Animations.Leaf:
+                            AlertMessage.AlertAnimation.errorType = WFAnimations.AnimationType.Leaf;
+                            break;
+                        case Animations.HorizSlideAndRotate:
+                            AlertMessage.AlertAnimation.errorType = WFAnimations.AnimationType.HorizSlideAndRotate;
+                            break;
+                        case Animations.HorizBlind:
+                            AlertMessage.AlertAnimation.errorType = WFAnimations.AnimationType.HorizBlind;
+                            break;
+                        case Animations.VertBlind:
+                            AlertMessage.AlertAnimation.errorType = WFAnimations.AnimationType.VertBlind;
+                            break;
+                        case Animations.VertSlide:
+                            AlertMessage.AlertAnimation.errorType = WFAnimations.AnimationType.VertSlide;
+                            break;
+                        case Animations.HorizSlide:
+                            AlertMessage.AlertAnimation.errorType = WFAnimations.AnimationType.HorizSlide;
+                            break;
+                        case Animations.ScaleAndRotate:
+                            AlertMessage.AlertAnimation.errorType = WFAnimations.AnimationType.ScaleAndRotate;
+                            break;
+                        case Animations.ScaleAndHorizSlide:
+                            AlertMessage.AlertAnimation.errorType = WFAnimations.AnimationType.ScaleAndHorizSlide;
+                            break;
+                    }
+                }
+            }
+            public static WFAlert.Animations Info
+            {
+                get { return AlertMessage.AlertAnimation.info; }
+                set
+                {
+                    AlertMessage.AlertAnimation.info = value;
+                    switch (value)
+                    {
+                        case Animations.Scale:
+                            AlertMessage.AlertAnimation.infoType = WFAnimations.AnimationType.Scale;
+                            break;
+                        case Animations.Rotate:
+                            AlertMessage.AlertAnimation.infoType = WFAnimations.AnimationType.Rotate;
+                            break;
+                        case Animations.Transparent:
+                            AlertMessage.AlertAnimation.infoType = WFAnimations.AnimationType.Transparent;
+                            break;
+                        case Animations.Particles:
+                            AlertMessage.AlertAnimation.infoType = WFAnimations.AnimationType.Particles;
+                            break;
+                        case Animations.Mosaic:
+                            AlertMessage.AlertAnimation.infoType = WFAnimations.AnimationType.Mosaic;
+                            break;
+                        case Animations.Leaf:
+                            AlertMessage.AlertAnimation.infoType = WFAnimations.AnimationType.Leaf;
+                            break;
+                        case Animations.HorizSlideAndRotate:
+                            AlertMessage.AlertAnimation.infoType = WFAnimations.AnimationType.HorizSlideAndRotate;
+                            break;
+                        case Animations.HorizBlind:
+                            AlertMessage.AlertAnimation.infoType = WFAnimations.AnimationType.HorizBlind;
+                            break;
+                        case Animations.VertBlind:
+                            AlertMessage.AlertAnimation.infoType = WFAnimations.AnimationType.VertBlind;
+                            break;
+                        case Animations.VertSlide:
+                            AlertMessage.AlertAnimation.infoType = WFAnimations.AnimationType.VertSlide;
+                            break;
+                        case Animations.HorizSlide:
+                            AlertMessage.AlertAnimation.infoType = WFAnimations.AnimationType.HorizSlide;
+                            break;
+                        case Animations.ScaleAndRotate:
+                            AlertMessage.AlertAnimation.infoType = WFAnimations.AnimationType.ScaleAndRotate;
+                            break;
+                        case Animations.ScaleAndHorizSlide:
+                            AlertMessage.AlertAnimation.infoType = WFAnimations.AnimationType.ScaleAndHorizSlide;
+                            break;
+                    }
+                }
+            }
+            public static WFAlert.Animations Warning
+            {
+                get { return AlertMessage.AlertAnimation.warning; }
+                set
+                {
+                    AlertMessage.AlertAnimation.warning = value;
+                    switch (value)
+                    {
+                        case Animations.Scale:
+                            AlertMessage.AlertAnimation.warningType = WFAnimations.AnimationType.Scale;
+                            break;
+                        case Animations.Rotate:
+                            AlertMessage.AlertAnimation.warningType = WFAnimations.AnimationType.Rotate;
+                            break;
+                        case Animations.Transparent:
+                            AlertMessage.AlertAnimation.warningType = WFAnimations.AnimationType.Transparent;
+                            break;
+                        case Animations.Particles:
+                            AlertMessage.AlertAnimation.warningType = WFAnimations.AnimationType.Particles;
+                            break;
+                        case Animations.Mosaic:
+                            AlertMessage.AlertAnimation.warningType = WFAnimations.AnimationType.Mosaic;
+                            break;
+                        case Animations.Leaf:
+                            AlertMessage.AlertAnimation.warningType = WFAnimations.AnimationType.Leaf;
+                            break;
+                        case Animations.HorizSlideAndRotate:
+                            AlertMessage.AlertAnimation.warningType = WFAnimations.AnimationType.HorizSlideAndRotate;
+                            break;
+                        case Animations.HorizBlind:
+                            AlertMessage.AlertAnimation.warningType = WFAnimations.AnimationType.HorizBlind;
+                            break;
+                        case Animations.VertBlind:
+                            AlertMessage.AlertAnimation.warningType = WFAnimations.AnimationType.VertBlind;
+                            break;
+                        case Animations.VertSlide:
+                            AlertMessage.AlertAnimation.warningType = WFAnimations.AnimationType.VertSlide;
+                            break;
+                        case Animations.HorizSlide:
+                            AlertMessage.AlertAnimation.warningType = WFAnimations.AnimationType.HorizSlide;
+                            break;
+                        case Animations.ScaleAndRotate:
+                            AlertMessage.AlertAnimation.warningType = WFAnimations.AnimationType.ScaleAndRotate;
+                            break;
+                        case Animations.ScaleAndHorizSlide:
+                            AlertMessage.AlertAnimation.warningType = WFAnimations.AnimationType.ScaleAndHorizSlide;
+                            break;
+                    }
+                }
+            }
         }
 
         public static void Show(string message, WFAlert.Types type, bool closebutton = true)
