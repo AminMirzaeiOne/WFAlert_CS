@@ -50,6 +50,12 @@ WFAlert.AlertMessage.Animation = true;
 WFAlert.AlertMessage.AlertAnimation.TimeStep = 0.02f;
 ```
 
+8 - Change animation type <br />
+
+```
+WFAlert.AlertMessage.AlertAnimation.Success = WFAlert.Animations.Mosaic;
+```
+
 
 <h2>🎨Styles and Themes</h2>
 <h3>✅Success Alert</h3>
