@@ -142,6 +142,7 @@ namespace WFAlert
         public struct AlertAnimation
         {
             internal static WFAnimations.AnimationType success = WFAnimations.AnimationType.Scale;
+            internal static WFAnimations.AnimationType error = WFAnimations.AnimationType.Scale;
 
 
 
