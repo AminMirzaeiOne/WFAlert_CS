@@ -62,6 +62,12 @@ WFAlert.AlertMessage.AlertAnimation.Success = WFAlert.Animations.Mosaic;
 WFAlert.AlertMessage.Style = WFAlert.Styles.Fill;
 ```
 
+10 - Changing the theme of Alerts (Light and Dark Styles) <br />
+
+```
+WFAlert.AlertMessage.Theme = WFAlert.Themes.Dark;
+```
+
 
 <h2>🎨Styles and Themes</h2>
 <h3>✅Success Alert</h3>
